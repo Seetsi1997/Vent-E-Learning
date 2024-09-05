@@ -1,0 +1,794 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+	<head>
+		<!--  *****   Link To Custom CSS Style Sheet   *****  -->
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/mediaqueries.css">
+		<link rel="stylesheet" href="./rules/terms.html">
+
+		<!--  *****   Link To Font Awsome Icons   *****  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+		<!--  *****   Link To Owl Carousel   *****  -->
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+			<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Vent</title>
+	</head>
+
+	<body class="show-chatbot">
+		<!-- Preloader container -->
+       <div id="splash-screen">
+	    <!-- Starting icon -->
+	      <img src="./assets/images/courses/logo.png" alt="Starting Icon">
+	       <p>Welcome to our community, connect, learn, and grow with us, by achieving more, stress less. <i class="fa-sharp fa-solid fa-handshake"></i></p>
+        </div>
+		<!--   *** Website Container Starts ***   -->
+		<div class="website-container" id="home-screen">
+			<!--   *** Home Section Starts ***   -->
+			<section class="home" id="home">
+				<!--   === Main Navbar Starts ===   -->
+				<nav class="main-navbar">
+					<a href="#" class="logo">Vent<span class="vent-name">e-learning</span></a>
+					<ul class="nav-list">
+						<li><a href="#home">Home</a></li>
+			            <li><a href="#services">Services</a></li>
+			            <li><a href="#courses">Modules</a></li>
+			            <li><a href="#instructor">Instructors</a></li>
+			            <li><a href="#testimonials">Testimonials</a></li>
+						<li><a href="#maps">Maps</a></li>
+			            <li><a href="#footer">Contact Us</a></li>
+					</ul>
+					<div class="menu-btn">
+						<span></span>
+					</div>
+				</nav>
+				<!--   === Main Navbar Ends ===   -->
+				<!--   === Popup chat window Starts === -->
+				<!-- chat open -->
+				<section class="chat">
+					<div class="chat-bar-open" id="chat-open">
+						<button id="chat-open-button" type="button" class="collapsible close" onclick="chatOpen()">
+						 <p>Chat</p>
+						</button>
+					  </div>
+					   <!-- chat close -->
+					  <div class="chat-bar-close" id="chat-close">
+						<button id="chat-close-button" type="button" class="collapsible close" onclick="chatClose()">
+							<i class="fa-solid fa-xmark"></i>
+						</button>
+					   </div>
+					<!-- chat-window 1 -->
+					 <div class="chat-window" id="chat-window1">
+					   <div class="hi-there">
+							<p class="p1">Hey  There</p>
+							<br />
+							<p class="p2">Got Question? We're Here To Help Ask Away</p>
+					   </div>
+					   <div class="start-conversation">
+						   <h1>Start a Conversation With Us <i class="fa-solid fa-hands-clapping"></i></h1>
+						   <br />
+							<p>We will get back to you in no time usually within minutes.</p>
+							<button class="new-conversation" type="button" onclick="openWhatsApp('mobile')">
+								<span>Chat Now</span> 
+							</button>
+					   </div>
+					 </div>
+				 </section>
+				<!--   === Popup chat Ends === -->
+				<!--   === Banner Starts === -->
+				<div class="banner">
+
+					<div class="banner-desc">
+						<h2>Start Learning, Anywhere, Anytime As You Want <i class="fa-solid fa-hands-clapping"></i></h2>
+						<div class="search-bar">
+							<input type="search" id="search-bar" placeholder="Search Modules...">
+							<i class="fa-solid fa-search"></i>
+						</div>
+						<div id="search-results"></div>
+					</div>
+					<div class="banner-img">
+						<div class="banner-img-container">
+							<img src="./assets/images/courses/blog.jpg">
+							<div class="states">
+								<div class="courses-ratings">
+									<span>3.7<i class="fa-solid fa-star"></i></span>
+									<span>Ratings (1k)</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--   === Banner Ends ===   -->
+			</section>
+			<!--   *** Home Section Ends ***   -->
+
+			<!--   *** Services Section Starts ***   -->
+			<section class="services" id="services">
+				<!--   *** Services Header Starts ***   -->
+				<header class="section-header">
+					<h1>Why Choose Us</h1>
+					<p>Customers choose us because they trust our brand and people. We earn that trust by ensuring
+						everything we do is reliable, consistent, and with the highest level of integrity.</p>
+				</header>
+				<!--   *** Services Header Ends ***   -->
+				<!--   *** Services Contents Starts ***   -->
+				<div class="services-contents">
+
+					<div class="service-box">
+						<div class="service-icon">
+							<i class="fa-solid fa-calendar"></i>
+						</div>
+						<div class="service-desc">
+							<h2>Flexible Timing</h2>
+							<p>Need help organizing your study schedule?, I will assist you in creating a plan that
+								works for you.</p>
+							<p>Want to practice a language conversation?, I'm here to chat and help you improve your
+								skill.</p>
+							<p>Have a programming question?, I will help you debug and get your code running smoothly.
+							</p>
+						</div>
+					</div>
+					<div class="service-box">
+						<div class="service-icon">
+							<i class="fa-solid fa-users"></i>
+						</div>
+						<div class="service-desc">
+							<h2>Expert Instructors</h2>
+							<p>Mr. Justice</p>
+							<p>Mr. Pheello</p>
+							<p>Miss. Itumeleng</p>
+							<p>Mr. KAT</p>
+						</div>
+					</div>
+					<div class="service-box" >
+					<div class="service-icon">
+						<i class="fa-solid fa-clock"></i>
+					</div>
+					<div class="service-desc">
+						<h2>24/7 Live Support</h2>
+						<p>Need help with study skills or time management?, I'm always here to assist you in
+							achiving you goals.</p>
+						<p>Got a question about IT concept?, Ask me anytime, and I will repond with a
+							step-by-step-solution.</p>
+						<p>Programming errors got you stuck?, I will help you debug and get your code running 24
+							hours a day.</p>
+					</div>
+					</div>
+				</div>
+				<!--   *** Services Contents Ends ***   -->
+			</section>
+			<!--   *** Services Section Ends ***   -->
+
+			<!--   *** Courses Section Starts ***   -->
+			<section class="courses" id="courses">
+				<!--   *** Courses Header Starts ***   -->
+				<header class="section-header">
+					<div class="header-text">
+						<h1>Choose Your Favourite Module</h1>
+						<p>So that i can help you.</p>
+					</div>
+				</header>
+				<!--   *** Courses Header Ends ***   -->
+				<!--   *** Courses Contents Starts ***   -->
+				    <div class="course-contents">
+						<!--START SOFTWARE ENGINEERING CARD START-->
+					<div class="course-card">
+						<!-- POPUP -->
+						<div id="software-engineering-overlay" class="course-popup-overlay">
+							<div class="course-popup-container">
+								<div class="course-popup-content">
+									<a id="close-software-engineering" class="course-popup-close"><i class="fa-solid fa-xmark"></i></a>
+									<h3 id="header">Tutorials That We Offer</h3>
+									<p id="content">Introduction in Software Engineering</p>
+									<p id="content">Object Oriented Programming (OOP) Concepts</p>
+									<p id="content">Data Structure And Algorithms</p>
+									<p id="content">Design Pattern</p>
+									<p id="content">Software Development Life Cycle (SDLC)</p>
+									<p id="content">Testing And Debugging</p>
+									<p id="content">Database Management System</p>
+								</div>
+							</div>
+						</div>
+						<!-- END POPUP -->
+						<img src="./assets/images/courses/teacher-1.png">
+						<div class="category">
+							<div class="subject">
+								<h3>Software Engineering</h3>
+							</div>
+							<img src="./assets/images/courses/dark.jpg">
+						</div>
+						<h2 class="course-title">Learn Software Engineering:</h2>
+						<div class="course-desc">
+							<span><i class="fa-solid fa-book"></i></span>
+							<span><i class="fa-solid fa-users"></i></span>
+						</div>
+						<div class="course-ratings">
+							<span>3.9 <i class="fa-solid fa-star"></i></span>
+							<button id="open-software-engineering"  class="newsletter-btn btn">View More</button>
+						</div>
+					</div> 
+					<!--END SOFTWARE ENGINEERING -->  
+					<!--START SOFTWARE DEVELOPMENT CARD-->
+
+					<div class="course-card">
+						<!-- POPUP -->
+						<div id="software-development-overlay" class="course-popup-overlay">
+							<div class="course-popup-container">
+								<div class="course-popup-content">
+									<a id="close-software-development" class="course-popup-close"><i class="fa-solid fa-xmark"></i></a>
+									<h3 id="header">Tutorials That We Offer</h3>
+									<p id="contect">Variables and Expressions</p>
+									<p id="content">Flow Control</p>
+									<p id="content">Functions</p>
+									<p id="contect">Object Oriented Programming</p>
+									<p id="contect">Defining Classes and Its Class Members</p>
+									<p id="content">Collections, Comparisons, and Conversion</p>
+								</div>
+							</div>
+						</div>
+						<!-- END POPUP -->
+						<img src="./assets/images/courses/teacher-1.png">
+						<div class="category">
+							<div class="subject">
+								<h3>Software Development</h3>
+							</div>
+							<img src="./assets/images/courses/dark.jpg">
+						</div>
+						<h2 class="course-title">Learn Software Development</h2>
+						<div class="course-desc">
+							<span><i class="fa-solid fa-book"></i></span>
+							<span><i class="fa-solid fa-users"></i></span>
+						</div>
+						<div class="course-ratings">
+							<span>5.0 <i class="fa-solid fa-star"></i></span>
+							<button id="open-software-development"  class="newsletter-btn btn">View More</button>
+						</div>
+					</div>
+                   <!-- END SOFTWARE DEVELOPMENT CARD-->
+
+				   <!-- START TECHNICAL PROGRAMMING CARD -->
+				   <div class="course-card">
+                    <!-- POPUP -->
+                    <div id="tech-programming-overlay" class="course-popup-overlay">
+	                    <div class="course-popup-container">
+		                   <div class="course-popup-content">
+			                 <a id="close-tech-programming" class="course-popup-close"><i class="fa-solid fa-xmark"></i></a>
+			                 <h3 id="header">Tutorials That We Offer</h3>
+							 <p id="contect">Variables and Data Types</p>
+							 <p id="content">Comtrol Flow And Functions</p>
+							 <p id="content">Classes</p>
+							 <p id="contect">Inheritance and Exceptions</p>
+							 <p id="contect">State Management?</p>
+							 <p id="content">Generics And Collections</p>
+							 <p id="content">Routers And Navigations</p>
+		                   </div>
+	                    </div>
+                   </div>
+                   <!-- END POPUP -->    
+				  
+						<img src="./assets/images/courses/teacher-1.png">
+						<div class="category">
+							<div class="subject">
+								<h3>Technical Programming</h3>
+							</div>
+							<img src="./assets/images/courses/dark.jpg">
+						</div>
+						<h2 class="course-title">Learn Technical Programming</h2>
+						<div class="course-desc">
+							<span><i class="fa-solid fa-book"></i></span>
+							<span><i class="fa-solid fa-users"></i></span>
+						</div>
+						<div class="course-ratings">
+							<span>4.0 <i class="fa-solid fa-star"></i></span>
+							<button id="open-tech-programming" class="newsletter-btn btn">View More</button>
+						</div>
+					</div>
+				   <!-- END TECHNICAL PROGRAMMING CARD -->
+
+				   <!-- START DATABASE CARD -->
+				   <div class="course-card">
+					<!-- POPUP -->
+					<div id="db-overlay" class="course-popup-overlay">
+						<div class="course-popup-container">
+							<div class="course-popup-content">
+								<a id="close-db" class="course-popup-close"><i class="fa-solid fa-xmark"></i></a>
+								<h3 id="header">Tutorials That We Offer</h3>
+								<p id="content">Relactional Database Management System</p>
+								<p id="content">Database Design</p>
+								<p id="content">SQL (Structured Query Language)</p>
+								<p id="content">Database Backup And Recovery</p>
+								<p id="content">Daatabase Modeling And Design Tools</p>
+								<p id="content">Database Perfomance Optimization</p>
+								<p id="content">Database Security</p>
+							</div>
+						</div>
+					</div>
+					<!-- END POPUP -->
+					<img src="./assets/images/courses/teacher-1.png">
+					<div class="category">
+						<div class="subject">
+							<h3>Database</h3>
+						</div>
+						<img src="./assets/images/courses/dark.jpg">
+					</div>
+					<h2 class="course-title">Learn Database</h2>
+					<div class="course-desc">
+						<span><i class="fa-solid fa-book"></i></span>
+						<span><i class="fa-solid fa-users"></i></span>
+					</div>
+					<div class="course-ratings">
+						<span>5.0 <i class="fa-solid fa-star"></i></span>
+						<button id="open-db"  class="popup-link newsletter-btn btn">View More</button>
+					</div>
+				</div>
+				   <!-- END DATABASE CARD -->
+
+				   <!-- START WEB DEVELOPMENT CARD-->
+                          
+					<div class="course-card">
+						<!-- POPUP -->
+						<div id="web-development-overlay" class="course-popup-overlay">
+							<div class="course-popup-container">
+								<div class="course-popup-content">
+									<a id="close-web-development" class="course-popup-close"><i class="fa-solid fa-xmark"></i></a>
+									<h3 id="header">Tutorials That We Offer</h3>
+									<p id="content">Introduction to HTML|CSS|JavaScript </p>
+									<p id="content">Basic HTML Structure|CSS Syntax|JavaScript Basic</p>
+									<p id="content">Attibutes|Box Models|Functions</p>
+									<p id="content">Elements|Selectors|Control Structures</p>
+									<p id="content">Forms|Layout|Events</p>
+									<p id="content">Tables|Visual Style|DOM Manipulation</p>
+								</div>
+							</div>
+						</div>
+						<!-- END POPUP -->
+						<img src="./assets/images/courses/teacher-1.png">
+						<div class="category">
+							<div class="subject">
+								<h3>Web Development</h3>
+							</div>
+							<img src="./assets/images/courses/dark.jpg">
+						</div>
+						<h2 class="course-title">Learn Web Development</h2>
+						<div class="course-desc">
+							<span><i class="fa-solid fa-book"></i></span>
+							<span><i class="fa-solid fa-users"></i></span>
+						</div>
+						<div class="course-ratings">
+							<span>3.9 <i class="fa-solid fa-star"></i></span>
+							<button id="open-web-development"  class="popup-link newsletter-btn btn">View More</button>
+						</div>
+					</div>
+				   <!-- END WEB DEVELOPMENT CARD-->
+
+				   <!-- START TECHNICAL SUPPORT CARD-->
+				   <div class="course-card">
+					<!-- POPUP -->
+					   <div id="tech-support-overlay" class="course-popup-overlay">
+						 <div class="course-popup-container">
+						   <div class="course-popup-content">
+							 <a id="close-tech-support" class="course-popup-close"><i class="fa-solid fa-xmark"></i></a>
+							  <h3 id="header">Tutorials That We Offer</h3>
+							   <p id="content">Help Desk Software and Tools</p>
+							   <p id="content">Troubleshoot Technique</p>
+							   <p id="content">Operating System Support</p>
+							   <p id="content">Hardware Support</p>
+							   <p id="content">Network Support</p>
+							   <p id="content">Software Support</p>
+							   <p id="content">Security And Data Protection</p>
+							   <p id="content">Advanced Technical Support</p>
+						   </div>
+						 </div>
+					   </div>
+					   <!-- END POPUP -->
+					   <img src="./assets/images/courses/teacher-1.png">
+					   <div class="category">
+					   <div class="subject" data-course-id="technical-support-course">
+						 <h3>Technical Support</h3>
+					   </div>
+						 <img src="./assets/images/courses/dark.jpg">
+					   </div>
+						 <h2 class="course-title">Learn Technical Support</h2>
+					   <div class="course-desc">
+						<span><i class="fa-solid fa-book"></i></span>
+						 <span><i class="fa-solid fa-users"></i></span>
+					   </div>
+					   <div class="course-ratings">
+						<span>3.9 <i class="fa-solid fa-star"></i></span>
+						<button id="open-tech-support"  class="popup-link newsletter-btn btn">View More</button>
+					   </div>
+				   </div>
+				   <!-- END TECHNICAL SUPPORT CARD -->
+			    </div>
+			<!--   *** Courses Contents Ends ***   -->
+			</section>
+			<!--   *** Courses Section Ends ***   -->
+
+			<!--   *** Teacher Section Starts ***   -->
+			<section class="instructor" id="instructor">
+				<div class="instructor-contents">
+				<div class="instructor-card">
+					<!-- POPUP -->
+					   <div id="instructor-overlay" class="instructor-popup-overlay">
+						 <div class="instructor-popup-container">
+						   <div class="instructor-popup-content">
+							 <a id="close-instructor-popup" class="instructor-popup-close"><i class="fa-solid fa-xmark"></i></a>
+							  <h3 id="header">Instructors</h3>
+							  <div class="user-contents">
+								<div class="user-wrapper">
+									<span id="content"><i class="fa-solid fa-user"></i> Mr. Justice</span>
+								</div>
+								<div class="contact-wrapper">
+									<span><a href="tel:+27658365336"><i class="fa fa-square-phone"></i></a>
+									</span>
+									<span><a href="mailto:seetsi1997@gmail.com"><i
+												class="fa fa-envelope"></i></a></span>
+								</div>
+							</div>
+							<div class="user-contents">
+								<div class="user-wrapper">
+									<span id="content"><i class="fa-solid fa-user"></i> Miss. Itumeleng</span>
+								</div>
+								<div class="contact-wrapper">
+									<span><a href="tel:+2760352284"><i class="fa fa-square-phone"></i></a>
+									</span>
+									<span><a href="mailto:seetsi1997@gmail.com"><i
+												class="fa fa-envelope"></i></a></span>
+								</div>
+							</div>
+							<div class="user-contents">
+								<div class="user-wrapper">
+									<span id="content"><i class="fa-solid fa-user"></i> Mr. Pheello</span>
+								</div>
+								<div class="contact-wrapper">
+									<span><a href="tel:+27714032041"><i class="fa fa-square-phone"></i></a>
+									</span>
+									<span><a href="mailto:seetsi1997@gmail.com"><i
+												class="fa fa-envelope"></i></a></span>
+								</div>
+							</div>
+							<div class="user-contents">
+								<div class="user-wrapper">
+									<span id="content"><i class="fa-solid fa-user"></i> Mr. KAT</span>
+								</div>
+								<div class="contact-wrapper">
+									<span><a href="tel:+27782815178"><i class="fa fa-square-phone"></i></a>
+									</span>
+									<span><a href="mailto:seetsi1997@gmail.com"><i
+												class="fa fa-envelope"></i></a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					   <!-- END POPUP -->
+					<div class="instructor-container">
+						<h2>Develop the skills to become a Vent platform instructor <i class="fa-solid fa-hands-clapping"></i></h2>
+						<p>Better than a thousand days of diligent study is one day with a great instructor.</p>
+						<button id="open-instructor-popup" class="teacher-btn btn">View Instructors</button>
+					</div>
+				</div>
+			</div>
+			</section>
+			<!--   *** Teacher Section Ends ***   -->
+
+			<!--   *** Testimonials Section Starts ***   -->
+			<section class="testimonials" id="testimonials">
+				<!--   === Testimonials Section Header Starts ===   -->
+				<header class="section-header">
+					<h1>Students Testimonials</h1>
+					<p>Learn as much as you can when you are young, because life gets too hectic later.</p>
+				</header>
+				<!--   === Testimonials Section Header Ends ===   -->
+				<!--   === Testimonials Contents Starts ===   -->
+				<div class="owl-carousel owl-theme testimonials-slider">
+                    <!-- PHEELLO -->
+					<div class="item testimonials-item">
+						<div class="profile">
+							<div class="profile-image">
+								<img src="./assets/images/testimonials/user.png">
+							</div>
+							<div class="profile-desc">
+								<span>Pheello <i class="fa-solid fa-handshake" ></i></span>
+								<span>ICT Tech Support Engineer</span>
+							</div>
+						</div>
+							<div class="quote quote-1">
+								<div class="quote-0"> 
+									<i class="fa fa-quote-left"><span></span></i>
+								</div>
+								<p> Khauhelo and I were classmates since 2019, studying software development at the Central
+									University of the Free State.
+									Despite my lack of programming background (as public schools typically don't offer coding
+									modules), the journey was challenging.
+									It felt like learning a foreign language. Khauhelo stood out as one of the fastest learners
+									in SOD modules, which covered C#, Java, and Flutter.
+									He generously formed a study group, ensuring we all grasped the content. Thanks to him, we
+									not only understood the material but also passed our course.
+									I wish Khauhelo all the best, he's truly a brilliant developer .  </p>
+								    <div class="quote-1">
+                                        <i class="fa fa-quote-right"><span></span></i>
+									</div>
+							</div>
+						<div class="ratings">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+					</div>
+					<!-- PHEELLO -->
+                    <!-- KAT -->
+					<div class="item testimonials-item">
+						<div class="profile">
+							<div class="profile-image">
+								<img src="./assets/images/testimonials/user.png">
+							</div>
+							<div class="profile-desc">
+								<span>KAT <i class="fa-solid fa-handshake" ></i></span>
+								<span>AI Engineer</span>
+							</div>
+						</div>
+						<div class="quote">
+							<div class="quote-0"> 
+								<i class="fa fa-quote-left"><span></span></i>
+							</div>
+							<p class="names-search"> Khauhelo helped me a lot at university, teaching me to code with patience and making me feel
+								valued.He started with basics, taught critical thinking, and shared his industry experiences.
+								He guided me through projects, building a strong portfolio, and gave feedback and
+								encouragement, boosting my confidence. He also helped me network and find internships, leading to more
+								experience and a job after graduation. His mentorship went beyond academics, helping me grow personally and develop a strong
+								mindset. Thanks to Khauhelo, I graduated with the skills and confidence to succeed as a software
+								developer.</p>
+								<div class="quote-1"> 
+									<i class="fa fa-quote-right"><span></span></i>
+								</div>
+						</div>
+						<div class="ratings">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+					</div>
+					<!-- KAT -->
+                    <!-- KHAUHELO'S-->
+					<div class="item testimonials-item">
+						<div class="profile">
+							<div class="profile-image">
+								<img src="./assets/images/testimonials/user.png">
+							</div>
+							<div class="profile-desc">
+								<span>Khauhelo <i class="fa-solid fa-handshake" ></i></span>
+								<span>Short Programme</span>
+							</div>
+						</div>
+						<div class="quote">
+							<div class="quote-0"> 
+								<i class="fa fa-quote-left"><span></span></i>
+							</div>
+							<p>Justice made a significant impact on my experience at Central University.
+								His passion for coding inspired me, and he emphasized the importance of patience and
+								self-worth.
+								This is where my love for coding and helping fellow students began.
+								Justice taught me critical thinking and generously shared his own experiences, encouraging
+								me to solve problems.
+								However, I believe he should continue assisting others.
+								As I honed my skills, I felt a responsibility to pay it forward.
+								Justice had shown me the way, now it was my turn. </p>
+								<div class="quote-1"> 
+									<i class="fa fa-quote-right"><span></span></i>
+								</div>
+						</div>
+						<div class="ratings">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+					</div>
+					<!-- KHAUHELO'S-->
+                    <!-- LUYANDA -->
+					<div class="item testimonials-item">
+						<div class="profile">
+							<div class="profile-image">
+								<img src="./assets/images/testimonials/user.png">
+							</div>
+							<div class="profile-desc">
+								<span>Luyanda <i class="fa-solid fa-handshake" ></i> </span>
+								<span>Restaurant</span>
+							</div>
+						</div>
+						<div class="quote">
+							<div class="quote-0"> 
+								<i class="fa fa-quote-left"><span></span></i>
+							</div>
+							<p>During our time at Central University of Technology, while pursuing a National Diploma in Information Technology,
+								Khauhelo was an invaluable resource. He generously shared his expertise in programming languages such as C#, Flutter, and Database, which greatly assisted me in my studies. 
+								Whether I faced conceptual challenges or worked on projects, he always offered clarity and support.
+								His assistance not only improved my programming understanding but also boosted my confidence.
+								I"m grateful for our time together at varsity, and I appreciate the significant impact he had on my academic journey .</p>
+								<div class="quote-1"> 
+									<i class="fa fa-quote-right"><span></span></i>
+								</div>
+						</div>
+						<div class="ratings">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+					</div>
+                    <!-- LUYANDA -->
+					 <!-- VUYO'S -->
+					<div class="item testimonials-item">
+						<div class="profile">
+							<div class="profile-image">
+								<img src="./assets/images/testimonials/user.png">
+							</div>
+							<div class="profile-desc">
+								<span>Vuyo <i class="fa-solid fa-handshake" ></i></span>
+								<span>IT Auditor Intern</span>
+							</div>
+						</div>
+						<div class="quote ">
+							<div class="quote-0"> 
+								<i class="fa fa-quote-left"><span></span></i>
+							</div>
+							<p>The database module was a challenging subject for me since I missed classes due to thepandemic.
+								Fortunately, my friend, who had previously studied databases in his first year of IT,
+								offered to help me understand the material.
+								He patiently devoted time and effort to explain the concepts, and his teaching skills and
+								expertise in the software enabled me to grasp the module thoroughly.
+								As a result, I became the top learner in the module throughout the course, thanks to his
+								support and guidance. </p>
+								<div class="quote-1"> 
+									<i class="fa fa-quote-right"><span></span></i>
+								</div>
+						</div>
+						<div class="ratings">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+					</div>
+                  <!-- VUYO'S -->
+				</div>
+				<!--   === Testimonials Contents Ends ===   -->
+			</section>
+			<!--   *** Testimonials Section Ends ***  -->
+			<!--   *** Map Div Start ***  -->
+             <section class="services maps" id="maps">
+				<header class="section-header">
+					<h1>Map</h1>
+					<p>Maps are a way of organizing wonder.</p>
+				</header>
+				<div class="mapping">
+					<div class="map" id="map"></div>
+				</div>
+			 </section>
+			
+
+            <!--   *** Map Div Ends ***  -->
+			<!--   *** Footer Section Starts ***   -->
+			<section class="footer" id="footer">
+
+				<!--   === Footer Contents Starts ===   -->
+				<div class="footer-contents">
+					<div class="footer-col footer-col-1">
+						<div class="col-title">
+							<h3>Year <span>|</spa> Time</h3>
+						</div>
+						<div class="col-contents">
+						  <span class="year-datetime" id="datetime" ></span>
+						</div>
+					</div>
+
+					<div class="footer-col footer-col-2">
+						<div class="col-title">
+							<h3>Postal Address</h3>
+						</div>
+						<div class="col-contents">
+							<div class="contact-row">
+							<div class="icons-pic">
+								<i class="fa-solid fa-address-book"></i>
+								 <span>Address</span>
+							</div>
+							<div class="icons-span">
+                                <span>Sagwityi Street, Commercia, Gauteng 1685</span>       
+							</div>
+								
+							</div>
+							<div class="contact-row">
+							<div class="icons-pic">
+								<i class="fa-solid fa-square-phone"></i> 
+								<span>Phone</span>
+							</div>
+							<div class="icons-span">
+								<span>(+27) 60 944 0410</span>
+							</div>
+								
+							</div>
+							<div class="contact-row">
+								<div class="icons-pic">
+									<i class="fa-solid fa-envelope"></i> 
+									<span>Email</span>
+								</div>
+								<div class="icons-span">
+									<span>Seetsi1997@gmail.com</span>  
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer-col footer-col-4">
+						<div class="col-title">
+							<h3>Get in touch with us</h3>
+						</div>
+						<div action="https://formspree.io/f/mgvwdgwk" method="POST"  class="col-contents">
+							<form class="newsletter">
+								<input type="text" id="name" placeholder="Your Name" required>
+								<input type="email" id="email" placeholder="Your Email" required>
+								<textarea name="message" id="message" placeholder="Message" cols="0" rows="7"
+									class="contact__input" required></textarea>
+								<button class="newsletter-btn btn" type="submit">
+									Send
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="copy-rights">
+					<div id="modal-terms-conditions" class="modal-terms-conditions">
+						<div class="modal-terms-conditions-content">
+							<span class="close-terms-conditions" onclick="closePopupCertificates()"><i class="fa-solid fa-xmark services__modal-close"></i></span>
+							<h2>Introduction</h2>
+							<ul>
+								<li>Welcome to Vent E-Learning. By accessing or using our website, you agree to comply with and be bound by these Terms of Use.</li>
+							</ul>
+							<h2>Use of the Website</h2>
+							<ul>
+								<li>You must be at least 18 years old to use our website. You agree to provide accurate information when creating an account and to keep your account information up-to-date.</li>
+							</ul>
+							<h2>Intellectual Property</h2>
+							<ul>
+								<li>All content on this website, including text, graphics, and logos, is the property of Vent E-Learning or its content suppliers and is protected by intellectual property laws.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-copy">
+						<p>2023-<a id="year"></a> © Developed by <span class="vent-name"><a id="openPopup">Vent System</a></span>. All Rights Reserved.</p>
+					</div>
+				</div>
+			</section>
+			<!--   *** Footer Section Ends ***   -->
+				
+		</div>
+		<!--   *** Website Container Ends ***   -->
+ 
+		<!--   *** Link To JQuery ***   -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+		<!--   *** Link To Owl Carousel ***   -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+		<!--   *** Link To Curstom Script File ***   -->
+		<script type="text/javascript" src="./js/function_script.js"></script>
+		<script type="text/javascript" src="./js/doc_script.js"></script>
+		<script type="text/javascript" src="./js/leaflet.js"></script>
+	</body>
+</html>
