@@ -733,6 +733,7 @@ section.courses{
 	font-size: 25px;
 	padding-top: 50px;
 	text-transform: uppercase;
+	white-space: nowrap;
 }
 
 .course-popup-content p {
@@ -742,6 +743,7 @@ section.courses{
 	text-align: justify;
 	font-style: normal;
 	text-transform: capitalize;
+	white-space: nowrap;
 }
 .course-popup-close{
 	position: absolute;
