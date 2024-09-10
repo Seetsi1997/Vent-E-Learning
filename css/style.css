@@ -730,12 +730,12 @@ section.courses{
 
 .course-popup-content h3 {
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	padding-top: 50px;
 	text-transform: uppercase;
-	text-overflow: ellipsis;
+	text-overflow: clip;
 	overflow: hidden;
-	white-space: nowrap;
+	white-space: pre-line;
 }
 
 .course-popup-content p {
@@ -743,9 +743,11 @@ section.courses{
 	margin-top: 20px;
 	color: var(--color-clr-2);
 	text-align: justify;
-	font-style: normal;
+	font-style: 100px;
 	text-transform: capitalize;
-	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: pre-line;
 }
 .course-popup-close{
 	position: absolute;
