@@ -733,6 +733,8 @@ section.courses{
 	font-size: 25px;
 	padding-top: 50px;
 	text-transform: uppercase;
+	text-overflow: ellipsis;
+	overflow: hidden;
 	white-space: nowrap;
 }
 
